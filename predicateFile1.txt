@@ -1,0 +1,15 @@
+human(X) : X is human
+pompeian(X) : X is pompeian
+dob(X,Y) : X was born in Year Y
+mortal(X) : X is mortal
+volcano(X) : volcano erupted in Year X
+present(X) : present Year is X
+dead(X,Y) : X is dead in Year Y
+alive(X,Y) : X is alive in Year Y
+age(X,Y) : X age is Y
+greaterYear(X,Y) : Year X is greater than Year Y
+roman(X) : X is roman
+ruler(X) : X is ruler
+loYal(X,Y) : X is loYal to Y
+hate(X,Y) : X hate Y
+assassinate(X,Y) : X assassinated Y

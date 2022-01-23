@@ -1,0 +1,8 @@
+alive(marcus,X) & now(X)
+assassinate(X,ceaser)
+loyal(marcus,ceaser)
+ruler(X)
+volcano(X)
+dead(marcus,60)
+hate(marcus,ceaser)
+alive(marcus,35)

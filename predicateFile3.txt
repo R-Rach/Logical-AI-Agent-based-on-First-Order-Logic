@@ -1,0 +1,8 @@
+breeze(X, Y) : There is breeze in row X and column Y.
+stench(X, Y) : There is stench in row X and column Y.
+glitter(X, Y) : There is glitter in row X and column Y.
+wumpus(X, Y) : There is Wumpus in row X and column Y.
+pit(X, Y) : There is a pit in row X and column Y.
+gold(X, Y) : There is gold in row X and column Y.
+currentpos(X, Y) : Current position is row X and column Y.
+bestmove(X, Y, Z) : Best action at row X and column Y is z.

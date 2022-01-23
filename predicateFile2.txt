@@ -1,0 +1,2 @@
+child(x,y): y is accompanied by x (or x is a parent of y)
+aspect(x,y): x's aspect is y

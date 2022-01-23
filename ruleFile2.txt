@@ -1,0 +1,12 @@
+~child(ms.reed,zach)
+~child(ms.reed, lauren)
+child(mr.morgan,xander)
+aspect(tara,shoppingatcountrystore)
+~aspect(xander,hayride)
+~child(ms.fedor,zach)
+~child(ms.fedor,lauren)
+~aspect(zach,hayride)
+~aspect(zach,applepicking)
+RULES
+{child(mr.hanson,m1) & ~aspect(X,hayride) => TRUE}
+{child(ms.fedor,m2) & aspect(X,cidermaking) => TRUE}

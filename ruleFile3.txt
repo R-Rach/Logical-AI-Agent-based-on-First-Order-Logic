@@ -1,0 +1,11 @@
+currentpos(0,0)
+~ pit(0,0)
+~ wumpus(0,0)
+RULES
+For_every X For_every Y {breeze(X,Y) =>  pit(X,Y+1) || pit(X,Y-1) || pit(X-1,Y) || pit(X+1,Y)}
+For_every X For_every Y {pit(X,Y) =>  breeze(X,Y+1) || breeze(X,Y-1) || breeze(X-1,Y) || breeze(X+1,Y)}
+For_every X For_every Y {wumpus(X,Y) =>  stench(X,Y+1) || stench(X,Y-1) || stench(X-1,Y) || stench(X+1,Y)}
+For_every X For_every Y {stench(X,Y) =>  wumpus(X,Y+1) || wumpus(X,Y-1) || wumpus(X-1,Y) || wumpus(X+1,Y)}
+For_every X For_every Y {glitter(X,Y) => gold(X,Y)}
+For_every X For_every Y {gold(X,Y) => glitter(X,Y)}
+For_every X For_every Y {gold(X,Y) => Bestmove(X,Y,grab)}

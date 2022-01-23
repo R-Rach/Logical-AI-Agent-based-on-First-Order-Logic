@@ -1,0 +1,20 @@
+human(marcus)
+pompeian(marcus)
+dob(marcus,40)
+volcano(79)
+present(2019)
+ruler(ceaser)
+assassinate(marcus,ceaser)
+RULES
+for_every X_1 {human(X_1) => mortal(X_1)}
+for_every X_2 {pompeian(X_2) => dead(X_2,79)}
+for_every X_3 for_every Y_3 {mortal(X_3) & age(X_3,Y_3) => greateryear(150,Y_3)}
+for_every X_4 for_every Y_4 {alive(X_4,Y_4) => ~dead(X_4,Y_4)}
+for_every X_5 for_every Y_5 for_every Z_5 {dead(X_5,Y_5) & greateryear(Z_5, Y_5)  => dead(X_5,Z_5)}
+for_every X_6 {pompeian(X_6) => roman(X_6)}
+for_every X_7 {roman(X_7) => (loyal(X_7,Ceaser) & ~hate(X_7,Ceaser)) || (~loyal(X_7,Ceaser) & hate(X_7,Ceaser))}
+for_every X_8 {human(X_8) => loyal(X_8, m1)}
+for_every X_9 for_every Y_9 {assassinate(X_9,Y_9) & ruler(Y_9) => ~loyal(X_9,Y_9)}
+for_every X_10 for every Y_10 {dob(X_10,Y_10) => alive(X_10,Y_10)}
+for_every X_10 for every Y_10 {dob(X_10,Y_10) & greateryear(Y_10,Z_10) => dead(X_10,Z_10)}
+for_every X_11 for every Y_11 {dead(X_11,Y_11) => ~alive(X_11,Y_11)}
